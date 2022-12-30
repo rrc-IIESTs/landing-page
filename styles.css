@@ -2,12 +2,13 @@ body{
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-
 }
 .nav{
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: black;
+    padding-top: 10px;
 }
 .business{
     float: left;
@@ -34,7 +35,8 @@ ul {
     width:60%;
     font-size: 2rem;
 }
-.lappy_pic img{
+@media screen and (min-width:768px) {
+    .lappy_pic img{
     height: 250px;
     position: absolute;
     bottom: 10px;
@@ -42,6 +44,8 @@ ul {
 .lappy_pic{
     position: relative;
 }
+}
+
 .arrow{
     display: flex;
     flex-basis: 100%;
@@ -82,6 +86,17 @@ h2 {
     padding-left: 5%;
     display: flex;
     flex-direction: column;
+}
+@media only screen and (max-width:768px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+    .about-image img{
+        width: 100%;
+    }
+    
 }
 .services{
     padding: 5%;
@@ -129,14 +144,23 @@ li a {
     text-align: center;
     padding-top: 5%;
 }
+::placeholder {
+
+    color: white;
+    opacity: 1;
+
+}
+
 
 .footer input{
-    width: 100%;
+    width: 80%;
     color: black;
     padding: 1%;
     border: 1px solid white ;
     background-color: black;
     margin: 1%;
+    display: flex;
+    flex-direction: column;
 }
 .footer button{
     background-color: white;
