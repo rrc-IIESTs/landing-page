@@ -1,0 +1,146 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.business{
+    float: left;
+    color: white;
+}
+li{
+   float: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.home {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-text{
+    width:60%;
+    font-size: 2rem;
+}
+.lappy_pic img{
+    height: 250px;
+    position: absolute;
+    bottom: 10px;
+}
+.lappy_pic{
+    position: relative;
+}
+.arrow{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 2%;
+}
+
+h1 {
+    margin-left: 20px;
+    font-size: 400%;
+    font-weight: 700;
+    color: white;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+h2 {
+    font-size: 300%;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+
+}
+.about-image{
+    position: relative;
+}
+.about-image img{
+    height: 400px;
+}
+.about .about-text{
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.services{
+    padding: 5%;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: stretch;
+}
+.card h3{
+    font-size: 200%;
+}
+.card{
+    max-width: 33%;
+    padding: 1rem;
+    margin: 2rem;
+    border: 2px solid black;
+    background-color: white;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.card:hover{
+    background-color: black;
+    color: white;
+    transition: .3s;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.footer{
+    background-color: black;
+
+}
+.footer h2{
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.footer input{
+    width: 100%;
+    color: black;
+    padding: 1%;
+    border: 1px solid white ;
+    background-color: black;
+    margin: 1%;
+}
+.footer button{
+    background-color: white;
+    color: black;
+    padding: 1% 5%;
+    margin: 1%;
+}
